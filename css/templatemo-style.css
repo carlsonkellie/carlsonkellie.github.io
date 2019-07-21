@@ -474,7 +474,7 @@ a small:hover {
 -----------------------------------------*/
 
 #education .education-img {
-  background: url('../images/education-img.jpg'); /*no-repeat;*/
+  background: url('../images/upennPhoto.jpg'); /*no-repeat;*/
 }
 
 #education .media-heading {
@@ -492,7 +492,7 @@ a small:hover {
 }
 
 #publications .publications-img {
-  background: url('../images/experience-img.jpg'); /* no-repeat; */
+  background: url('../images/sharpenedSixthSense.jpg'); /* no-repeat; */
 }
 
 #publications .media-heading {
@@ -549,7 +549,7 @@ a small:hover {
 -----------------------------------------*/
 
 #contact {
-  background: #a14c58;
+  background: #FFFFFF;
 }
 
 #contact .contact-form,
@@ -607,9 +607,6 @@ a small:hover {
   color: #ffffff;
 }
 
-#contact .fa {
-  padding-right: 10px;
-}
 
 
 
@@ -618,7 +615,7 @@ a small:hover {
 -----------------------------------------*/
 
 footer {
-    padding: 140px 0px;
+    padding: 50px 0px 40px 0px;
 }
 
 
