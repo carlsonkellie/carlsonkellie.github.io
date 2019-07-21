@@ -92,7 +92,7 @@ p {
 }
 
 .section-btn:hover {
-  background: #E3AE57;
+  background: #a14c58;
   border-color: transparent;
   color: #ffffff;
 }
@@ -112,19 +112,21 @@ p {
   padding-bottom: 22px;
 }
 
+/*#about,*/
 #about,
-#service,
 #experience,
 #education,
+#publications,
 #contact {
   position: relative;
 }
 
 #home .container,
-#about .container, 
+/*#about .container, */
 #experience .container,
-#service .container,
+#about .container,
 #education .container,
+#publications .container,
 #contact .container {
   width: 100%;
   padding: 0;
@@ -132,19 +134,24 @@ p {
 }
 
 #experience .experience-thumb,
+#publications .publications-thumb,
 #education .education-thumb  {
-  padding: 22px 42px 42px 42px;
+  padding: 22px 42px 42px 62px;
 }
 
-#service,
+#about,
 #quotes,
 footer {
   text-align: center;
 }
 
-#experience,
+#publications,
 #education {
-  background: #E9724C;
+  background: #8EAEBD;
+}
+
+#experience {
+  background: #a14c58;
 }
 
 .background-image {
@@ -165,11 +172,11 @@ footer {
 }
 
 .color-yellow {
-  color: #E3AE57;
+  color: #a14c58;
 }
 
 .bg-yellow {
-  background: #E3AE57;
+  background: #a14c58;
 }
 
 .bg-white {
@@ -191,15 +198,20 @@ html{
 }
 
 a {
-  color: #E3AE57;
+  color: #a14c58;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #E3AE57;
+  color: #a14c58;
   outline: none;
+  text-decoration: underline;
+}
+
+a small:hover {
+  text-decoration: underline;
 }
 
 * {
@@ -252,7 +264,7 @@ a:hover, a:active, a:focus {
   margin-top: -10px;
   margin-left: -10px;
   border-radius: 50%;
-  border: 2px solid #E3AE57;
+  border: 2px solid #a14c58;
   border-top-color: #f9f9f9;
   animation: spinner .6s linear infinite;
 }
@@ -297,7 +309,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #E3AE57;
+    color: #a14c58;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -307,7 +319,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #E3AE57;
+    color: #a14c58;
 }
 
 .custom-navbar .navbar-toggle {
@@ -320,7 +332,7 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
+    background: #a14c58;
     border-color: transparent;
 }
 
@@ -356,7 +368,7 @@ a:hover, a:active, a:focus {
 }
 
 #home .home-img {
-  background: url('../images/home-img.jpg') no-repeat;
+  background: url('../images/linkedinPhoto.jpg') no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
@@ -381,7 +393,7 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    About section              
 -----------------------------------------*/
-
+/*
 #about .about-img {
     background: url('../images/about-img.jpg') no-repeat;
 }
@@ -407,28 +419,28 @@ a:hover, a:active, a:focus {
   font-weight: bold;
   display: inline-block;
   padding-bottom: 8px;
-}
+} */
 
 
 
 /*---------------------------------------
-    Service section              
+    About section              
 -----------------------------------------*/
 
-#service {
-  background: #E9724C;
+#about {
+  background: #8EAEBD;
 }
 
-#service p {
+#about p {
   font-size: 18px;
   line-height: 30px;
 }
 
-#service .service-thumb {
+#about .about-thumb {
   padding: 52px 22px 52px 22px;
 }
 
-#service .service-thumb .fa {
+#about .about-thumb .fa {
   font-size: 42px;
   padding-bottom: 22px;
 }
@@ -440,7 +452,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #experience .experience-img {
-  background: url('../images/experience-img.jpg') no-repeat;
+  background: url('../images/experience-img.jpg');
 }
 
 #experience .media-heading {
@@ -461,12 +473,8 @@ a:hover, a:active, a:focus {
     Education section              
 -----------------------------------------*/
 
-#education {
-  background: #E3AE57;
-}
-
 #education .education-img {
-  background: url('../images/education-img.jpg') no-repeat;
+  background: url('../images/education-img.jpg'); /*no-repeat;*/
 }
 
 #education .media-heading {
@@ -479,7 +487,25 @@ a:hover, a:active, a:focus {
 }
 
 #education small {
-  color: #886D1E;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#publications .publications-img {
+  background: url('../images/experience-img.jpg'); /* no-repeat; */
+}
+
+#publications .media-heading {
+  margin-bottom: 0px;
+}
+
+#publications .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#publications small {
+  color: #FFFFFF;
   font-weight: bold;
 }
 
@@ -523,7 +549,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  background: #a14c58;
 }
 
 #contact .contact-form,
@@ -549,7 +575,7 @@ a:hover, a:active, a:focus {
 #contact .form-control {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #E3AE57;
+  border-bottom: 1px solid #FFFFFF;
   border-radius: 0px;
   box-shadow: none;
   color: #ffffff;
@@ -631,7 +657,7 @@ footer {
 }
 
 .social-icon li a:hover {
-    background: #E3AE57;
+    background: #a14c58;
     border-color: #ffffff;
     color: #ffffff;
     transform: scale(1.1);
@@ -671,18 +697,20 @@ footer {
   }
 
   #home .container,
-  #about .container, 
+  /*#about .container, */
   #experience .container,
-  #service .container,
+  #about .container,
   #education .container,
+  #publications .container,
   #contact .container {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  #about .col-md-3,
+  /*#about .col-md-3,*/
   #experience .col-md-6,
   #education .col-md-6,
+  #publications .col-md-6,
   #contact .col-md-3 {
     padding: 0;
     margin: 0;
